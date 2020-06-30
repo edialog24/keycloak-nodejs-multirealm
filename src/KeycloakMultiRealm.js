@@ -5,11 +5,11 @@ const jwt = require('jsonwebtoken');
 const path = require('path');
 const fs = require('fs');
 
-const Admin = require(path.join(process.cwd(), './node_modules/keycloak-connect/middleware/admin'));
-const Logout = require(path.join(process.cwd(), './node_modules/keycloak-connect/middleware/logout'));
-const PostAuth = require(path.join(process.cwd(), './node_modules/keycloak-connect/middleware/post-auth'));
-const GrantAttacher = require(path.join(process.cwd(), './node_modules/keycloak-connect/middleware/grant-attacher'));
-const Protect = require(path.join(process.cwd(), './node_modules/keycloak-connect/middleware/protect'));
+const Admin = require('keycloak-connect/middleware/admin');
+const Logout = require('keycloak-connect/middleware/logout');
+const PostAuth = require('keycloak-connect/middleware/post-auth');
+const GrantAttacher = require('/keycloak-connect/middleware/grant-attacher');
+const Protect = require('keycloak-connect/middleware/protect');
 
 const cache = new NodeCache();
 

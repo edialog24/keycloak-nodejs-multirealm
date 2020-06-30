@@ -3,17 +3,17 @@ const jwt = require('jsonwebtoken');
 const NodeCache = require('node-cache');
 const composable = require('composable-middleware');
 
-jest.mock('../node_modules/keycloak-connect/middleware/admin');
-jest.mock('../node_modules/keycloak-connect/middleware/logout');
-jest.mock('../node_modules/keycloak-connect/middleware/post-auth');
-jest.mock('../node_modules/keycloak-connect/middleware/grant-attacher');
-jest.mock('../node_modules/keycloak-connect/middleware/protect');
+jest.mock('keycloak-connect/middleware/admin');
+jest.mock('keycloak-connect/middleware/logout');
+jest.mock('keycloak-connect/middleware/post-auth');
+jest.mock('keycloak-connect/middleware/grant-attacher');
+jest.mock('keycloak-connect/middleware/protect');
 
-const Admin = require('../node_modules/keycloak-connect/middleware/admin');
-const Logout = require('../node_modules/keycloak-connect/middleware/logout');
-const PostAuth = require('../node_modules/keycloak-connect/middleware/post-auth');
-const GrantAttacher = require('../node_modules/keycloak-connect/middleware/grant-attacher');
-const Protect = require('../node_modules/keycloak-connect/middleware/protect');
+const Admin = require('keycloak-connect/middleware/admin');
+const Logout = require('keycloak-connect/middleware/logout');
+const PostAuth = require('keycloak-connect/middleware/post-auth');
+const GrantAttacher = require('keycloak-connect/middleware/grant-attacher');
+const Protect = require('keycloak-connect/middleware/protect');
 
 const KeycloakMultiRealm = require('./KeycloakMultiRealm');
 
