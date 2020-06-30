@@ -8,7 +8,7 @@ const fs = require('fs');
 const Admin = require('keycloak-connect/middleware/admin');
 const Logout = require('keycloak-connect/middleware/logout');
 const PostAuth = require('keycloak-connect/middleware/post-auth');
-const GrantAttacher = require('/keycloak-connect/middleware/grant-attacher');
+const GrantAttacher = require('keycloak-connect/middleware/grant-attacher');
 const Protect = require('keycloak-connect/middleware/protect');
 
 const cache = new NodeCache();
